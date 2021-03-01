@@ -6,8 +6,8 @@ def acronym(phrase):
     return a
 
 def main():
-    print("insert a full meaning of organization or concepto to get is acronym")
-    text = input("Please enter your phrase: ")
+    print("inserte un significado completo de organización o concepto para obtener es el acrónimo")
+    text = input("Por favor ingrese su organización: ")
     text = text.upper()
 
     answer = acronym(text)

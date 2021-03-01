@@ -2,19 +2,19 @@
 #out if the user has a custom domain name or a popular domain name. 
 
 
-popular_domains = {
+Dominios_populares = {
 "gmail": "Google",
 "hotmail":"Microsoft",
 "yahoo":"Yahoo",
 "outlook":"Microsoft"}
 
-user_email = input("What is your email address? ")
+usuario_correo = input("cual es tu direccion de correo electronico? ")
 
-user_name = user_email.split('@')[0]
-user_domain = user_email.split('@')[-1]
-user_domain = user_domain.split('.')[0]
+usuario_nombre = usuario_correo.split('@')[0]
+usuario_dominio = usuario_correo.split('@')[-1]
+usuario_dominio = usuario_dominio.split('.')[0]
 
-if user_domain in popular_domains.keys():
-    print(f"Hey {user_name} it seems like your email is registered with {popular_domains[user_domain]}!")
+if usuario_dominio in Dominios_populares.keys():
+    print(f"hey {usuario_nombre} al parecesr tu correo esta registrado con {Dominios_populares[usuario_dominio]}!")
 else:
-    print(f"Hey {user_name} it seems like you have your own custom domain at {user_domain}!")
+    print(f"Hey {usuario_nombre} parece que tienes tu propio dominio personalizado en {usuario_dominio}!")

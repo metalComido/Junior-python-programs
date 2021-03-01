@@ -1,7 +1,12 @@
-number = int(input("what number are you thinkin?")) 
+def main():
+    number = int(input("Cual numero piensas?")) 
 
-if number % 2 == 0:
-    print(number," is Odd")
-else:
-    print(number," is Even")
-print("thanks for using the program")
+    if number % 2 == 0:
+        print(number," es par")
+    else:
+        print(number," es impar")
+
+    print("gracias por usar el programa")
+    main()
+
+main()
